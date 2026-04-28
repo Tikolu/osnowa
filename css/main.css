@@ -1,0 +1,30 @@
+@import url(https://unpkg.com/maplibre-gl/dist/maplibre-gl.css);
+
+body {
+	margin: 0;
+}
+
+[hidden] {
+	display: none !important;
+}
+
+#loadingScreen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#mapContainer {
+	height: 100vh;
+
+	.maplibregl-popup-content {
+		border-radius: 1em;
+		padding: 0.5em;
+		text-align: center;
+	}
+}
+
+::view-transition-group(root) {
+	animation-duration: 0.5s;
+}
